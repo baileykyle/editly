@@ -13,7 +13,7 @@ import {
 import { registerFont } from './sources/fabric.js';
 import { calcTransition } from './transitions.js';
 
-const dirname = process.cwd();
+const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Cache
 const loadedFonts = [];
