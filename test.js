@@ -1,6 +1,11 @@
-import { execa } from 'execa';
+import { fileURLToPath, URL } from 'url';
 
 console.log(import.meta.url);
+console.log(new URL('.', import.meta.url))
+console.log(fileURLToPath(new URL('.', import.meta.url)))
+console.log(fileURLToPath(import.meta.url))
+console.log(process.cwd())
+
 // todo use jest
 // await execa('node', [
 //   'cli.js',
