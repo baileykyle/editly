@@ -1,5 +1,5 @@
 import pMap from 'p-map';
-import { basename, join } from 'path';
+import path, { basename, join } from 'path';
 import flatMap from 'lodash-es/flatMap.js';
 import assert from 'assert';
 import { fileURLToPath } from 'url';
